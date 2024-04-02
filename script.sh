@@ -24,4 +24,5 @@ do
    json_content1=`cat $file1`
    curl -i -X POST -H "Content-Type: application/json" -H "user-id: ansible_user" -d "$json_content1" http://54.254.225.115:8080/language-service/v1/language/language/importDefinition
 done
+echo print $success message
 
