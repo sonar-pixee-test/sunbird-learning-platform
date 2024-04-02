@@ -19,7 +19,7 @@ done
 #*****************************************************
 cd docs/language_model/definitions/iso                    #move inside th folder
 
-for file1 in * *
+for file1 in * * * *
 do
    json_content1=`cat $file1`
    curl -i -X POST -H "Content-Type: application/json" -H "user-id: ansible_user" -d "$json_content1" http://54.254.225.115:8080/language-service/v1/language/language/importDefinition
