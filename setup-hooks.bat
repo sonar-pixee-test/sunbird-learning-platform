@@ -1,5 +1,5 @@
 @echo off
-
+##
 echo Copy hooks to .git repo
 IF EXIST "hooks\" (
 call git subtree pull --prefix=hooks\ --squash hooks  master
